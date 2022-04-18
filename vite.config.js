@@ -9,5 +9,14 @@ export default defineConfig({
       '@' : path.resolve(__dirname, './src')
     },
   },
+  build: {
+    rollupOptions: {
+      manualChunks: {
+        'resume': [
+          './src/views/resume/Builder.vue'
+        ],
+      },
+    }
+  },
   plugins: [vue()]
 })
