@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .tooltip {
+        @apply absolute w-auto p-2 m-2 min-w-max
+            rounded-md shadow-md
+            text-white bg-gray-900
+            text-xs font-bold
+            transition-all duration-100 scale-0
+    }
+    .tooltip-left {
+        @apply tooltip right-4 origin-right
+    }
+    .tooltip-right {
+        @apply tooltip left-4 origin-left
+    }
+    .tooltip-top {
+        @apply tooltip bottom-4 origin-bottom right-0
+    }
+    .tooltip-bottom {
+        @apply tooltip top-4 origin-top right-0
+    }
+}

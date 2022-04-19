@@ -18,8 +18,8 @@ const inputOutHandler = (e) => emit('input', e.target.innerText.trim())
             @focusout="focusOutHandler"
             @input="inputOutHandler"
             class="my-0 mx-auto max-w-fit focus-within:outline-none
-                    focus-within:border-b-2 focus-within:border-b-gray-400"
-        >Untitled</div>
+                    focus-within:border-b-2 focus-within:border-b-emerald-400"
+        >Untitled Resume</div>
     </div>
 </template>
 
