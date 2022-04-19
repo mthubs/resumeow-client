@@ -9,7 +9,6 @@ const focusOutHandler = (e) => {
 const emit = defineEmits(['input'])
 
 const inputOutHandler = (e) => emit('input', e.target.innerText.trim())
-
 </script>
 
 <template>

@@ -1,0 +1,2 @@
+ export const resetInputValueToDefault = (e, defaultValue) =>  e.target.value = e.target.value.trim() || defaultValue.trim()
+ export const resizeInputBasedOnValueLength = (e) =>  e.target.size = e.target.value.length - 4 
